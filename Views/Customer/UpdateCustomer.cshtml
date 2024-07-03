@@ -1,0 +1,57 @@
+﻿@using SerimCase.Entities.Enum
+@using SerimCase.ViewModels
+
+@{
+    ViewData["Title"] = "UpdateCustomer";
+}
+@model CustomerUpdateViewModel
+
+<h2>UpdateCustomer</h2>
+
+<form asp-controller="Customer" asp-action="UpdateCustomer" style="display: flex; flex-direction: column;">
+
+    <input type="hidden" asp-for="Id" />
+    <div style="flex: 1;">
+        <div class="mb-3">
+            <label asp-for="Name" class="form-label">Ad</label>
+            <input class="form-control" asp-for="Name" />
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="SurName" class="form-label">Soyad</label>
+            <input class="form-control" asp-for="SurName" />
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Email" class="form-label">E-posta</label>
+            <input class="form-control" asp-for="Email" />
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="PhoneNumber" class="form-label">Telefon No</label>
+            <input class="form-control" asp-for="PhoneNumber" />
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="BirthDay" class="form-label">Doğum Tarihi</label>
+            <input class="form-control" asp-for="BirthDay" type="date" />
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Gender">Cinsiyet</label>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" asp-for="Gender" value="Erkek" />
+                <label class="form-check-label">Erkek</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" asp-for="Gender" value="Kadın" />
+                <label class="form-check-label">Kadın</label>
+            </div>
+        </div>
+    </div>
+
+    <div style="text-align: right;">
+        <button type="submit" class="btn btn-primary">Güncelle</button>
+    </div>
+</form>
+
