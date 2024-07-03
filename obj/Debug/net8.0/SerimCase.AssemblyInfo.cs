@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SerimCase")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5f9beeae9b50f351c3aaebbda84b3d617f00ef5c")]
 [assembly: System.Reflection.AssemblyProductAttribute("SerimCase")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SerimCase")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
